@@ -59,7 +59,7 @@ export default {
     removeSection(index) {
       this.createdSections.splice(index, 1)
     },
-    appendVariations({ id, variations}) {
+    appendVariations({ id, variations }) {
       this.createdSections[id].variations = variations
     },
     sumbitPoll() {
@@ -116,8 +116,7 @@ export default {
           :name="createdSections[index].name"
           :id="index"
           @append="appendVariations"
-        >
-        </RespondentsFormItem>
+        />
         <button
           @click="removeSection($event, index)"
           :class="$style.delete"
