@@ -35,7 +35,7 @@ export default {
     }
   },
   computed: {
-    conditionsAvalaible() {
+    conditionsAvailable() {
       return this.createdSections.length < this.conditionTypes.length
     },
     conditionNames() {
@@ -127,7 +127,7 @@ export default {
       </div>
     </transition-group>
     <button
-      v-if="conditionsAvalaible"
+      v-if="conditionsAvailable"
       :class="$style.add"
       @click="createSection"
     >
