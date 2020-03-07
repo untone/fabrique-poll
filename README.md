@@ -1,4 +1,4 @@
-# fabrique-test
+# fabrique-poll
 
 > Nuxt.js project
 
